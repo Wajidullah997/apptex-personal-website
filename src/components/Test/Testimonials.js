@@ -3,7 +3,7 @@ import ReactStars from "react-rating-stars-component";
 import menu from "./Menu";
 
 const Testimonials = () => {
-  const [items, setItems] = useState(menu);
+  const [items] = useState(menu);
 
   return (
     <section className="bg-blue-50">
@@ -30,14 +30,14 @@ const Testimonials = () => {
                     <div className="ml-4">
                       <h4 className="text-lg font-semibold">{title}</h4>
                       <p className="text-sm text-gray-400">{name}</p>
-                    
-                        <ReactStars
-                          edit={false}
-                          count={5}
-                          size={24}
-                          value={5}
-                          activeColor="#ffd700"
-                        />
+
+                      <ReactStars
+                        edit={false}
+                        count={5}
+                        size={24}
+                        value={5}
+                        activeColor="#ffd700"
+                      />
                     </div>
                   </div>
                   <p className="text-gray-600 mt-3">

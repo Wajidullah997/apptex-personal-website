@@ -3,7 +3,7 @@ import { HiArrowRight } from "react-icons/hi";
 import menu from "./Menu";
 
 const Portfolio = () => {
-  const [items, setItems] = useState(menu);
+  const [items] = useState(menu);
   return (
     <section className="w-full md:w-[80%] mt-5 md:mt-[56px] mx-auto flex flex-col justify-center items-center">
       <div className="flex flex-col justify-center items-center">
